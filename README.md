@@ -12,7 +12,7 @@ Faça o download da última versão do Python no site oficial: [https://www.pyth
 
 Durante a instalação, **é crucial** marcar a opção **"Add Python to PATH"** no canto inferior da tela.
 
-![Imagem da tela de instalação do Python, mostrando a opção "Add Python to PATH" selecionada.](https://www.google.com/url?sa=i&url=https%3A%2F%2Feducation.launchcode.org%2Flchs%2Fappendices%2Fsoftware-installation%2Fpython-setup.html&psig=AOvVaw3uDvdck5AhRKu_6Hjr9hCr&ust=1755141029733000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCMiNqKnnho8DFQAAAAAdAAAAABAE)
+![Imagem da tela de instalação do Python, mostrando a opção "Add Python to PATH" selecionada.](https://education.launchcode.org/lchs/_images/win-python-installer.png)
 
 ### 2. Instalação das Dependências
 Após a instalação do Python, abra o terminal de sua preferência (CMD, PowerShell, etc.) e instale as bibliotecas necessárias usando o `pip`:
