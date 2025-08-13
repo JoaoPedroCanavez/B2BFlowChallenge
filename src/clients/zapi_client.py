@@ -31,7 +31,7 @@ class ZapiClient:
                 print(f"Erro 403: Token '{self.token}' invalido ou expirado.")
             elif e.response.status_code == 400:
                 # erro 400 (Bad Request)
-                print(f"Erro 400: Requisição inválida. Verifique o formato do número de telefone e o status da sua instância.")
+                print(f"Erro 400: Requisição inválida. Verifique o status da sua instância.")
             else:
                 # Trata outros erros HTTP
                 print(f"Erro HTTP {e.response.status_code} ao enviar a mensagem para {phone}: {e}")
