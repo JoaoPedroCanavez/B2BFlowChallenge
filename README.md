@@ -12,7 +12,7 @@ Faça o download da última versão do Python no site oficial: [https://www.pyth
 
 Durante a instalação, **é crucial** marcar a opção **"Add Python to PATH"** no canto inferior da tela.
 
-![Imagem da tela de instalação do Python, mostrando a opção "Add Python to PATH" selecionada.](Challenge\assets\python-installer.png)
+![Imagem da tela de instalação do Python, mostrando a opção "Add Python to PATH" selecionada.](assets\python-installer.png)
 
 ### 2. Instalação das Dependências
 Após a instalação do Python, abra o terminal de sua preferência (CMD, PowerShell, etc.) e instale as bibliotecas necessárias usando o `pip`:
