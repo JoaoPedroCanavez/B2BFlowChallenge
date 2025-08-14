@@ -58,4 +58,10 @@ Abra o arquivo .env e coloque as informações sendo requisitadas ID, Keys, etc.
 
 ![Imagem da tela .env.](assets\env.jpg)
 
-Agora é só usar :)
+### 3. executando o codigo
+
+execute o codico com debug ou em terminal no Main.py
+
+**python main.py**
+
+executa a classe via terminal.
