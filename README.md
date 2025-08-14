@@ -56,7 +56,7 @@ Faça o dowload do repositorio como .zip, ou faça um clone via CommandLine usan
 ### 2. Coloque suas chaves de acesso
 Abra o arquivo .env e coloque as informações sendo requisitadas ID, Keys, etc.
 
-![Imagem da tela .env.](assets\env.jpg)
+![Imagem da tela .env.](https://github.com/JoaoPedroCanavez/B2BFlowChallenge/blob/main/assets/env.jpg?raw=true)
 
 ### 3. executando o codigo
 
