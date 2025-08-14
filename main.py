@@ -11,14 +11,15 @@ URL = os.getenv("s_url")
 KEY = os.getenv("s_Key")
 ID = os.getenv("z_ID")
 TOKEN = os.getenv("z_Token")
+AUTH_TOKEN = os.getenv("z_Auth_Token")
 
 if __name__ == "__main__":
-    if not all([URL, KEY, ID, TOKEN]):
+    if not all([URL, KEY, ID, TOKEN, AUTH_TOKEN]):
         print("Erro: Verifique se todas as credenciais estão no arquivo .env.")
     else:
         try:
             supabase_client_instance = SupabaseClient(URL, KEY)
-            zapi_client_instance = ZapiClient(ID, TOKEN)
+            zapi_client_instance = ZapiClient(ID, AUTH_TOKEN,TOKEN)
             
             messenger_app = WhatsappMessenger(supabase_client_instance, zapi_client_instance)
             messenger_app.run()

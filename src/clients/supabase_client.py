@@ -5,7 +5,7 @@ class SupabaseClient:
     def __init__(self, url: str, key: str):
         self.client: Client = create_client(url, key)
 
-    def get_contacts(self, table_name: str = 'Contacts'):
+    def get_contacts(self, table_name: str = 'Contatos'):
         try:
             print(f"Buscando contatos na tabela '{table_name}'...")
             

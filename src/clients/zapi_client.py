@@ -1,12 +1,14 @@
 import requests
 
 class ZapiClient:
-    def __init__(self, instance_id: str, token: str):
+    def __init__(self, instance_id: str, auth_token: str, instance_token: str):
         self.instace_id = instance_id
-        self.token = token
-        self.base_url = f"https://api.z-api.io/instances/{self.instace_id}/token/{self.token}"
+        self.auth_token = auth_token
+        self.instance_token = instance_token
+        self.base_url = f"https://api.z-api.io/instances/{self.instace_id}/{self.auth_token}/{self.instance_token}"
 
     def send_message(self, phone: str, message: str):
+        #fazendo requisição "post" 
         url = f"{self.base_url}/send-text"
         payload = {
             "phone": phone,
@@ -15,7 +17,8 @@ class ZapiClient:
         headers = {
             "Content-Type": "application/json"
         }
-
+        
+        #fazendo tratamento de erros para requisição de post
         try:
             response = requests.post(url, headers=headers, json=payload)
             response.raise_for_status()
